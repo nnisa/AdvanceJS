@@ -40,15 +40,13 @@
 
 
 
-
-
 // function makeCoffee(beans, water) {
 // 	grindBeans(beans)
 // 	addWater(water)
 // }
 
 // function grindBeans(beans){
-	
+
 // }
 
 // function addWater(water){
@@ -56,8 +54,18 @@
 // }
 
 
+var name = 'luke skywalker'
+// console.log(name)
+// console.log(name.length)
 
+var height = 6.5
+var rounded = Math.round(height)
 
+var isRad = 'true'
+// console.log(typeof(isRad))
+
+var elem = document.getElementById('para')
+console.log(elem.innerHTML)
 
 
 
