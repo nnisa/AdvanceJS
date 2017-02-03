@@ -84,35 +84,49 @@
 // thesis.register()
 
 
-////////////////////////////////////////////
+////////////////////////////////////////////////////////////
 
-var inventory = ['chair', 'table', 'board']
-userCredit = true 
+// var inventory = ['chair', 'table', 'board']
+// userCredit = true 
 
 
-while (inventory.length !=0){
-	sell()
-	console.log(inventory)
+// while (inventory.length !=0){
+// 	sell()
+// 	console.log(inventory)
+// }
+
+// for (var i = 0; i < inventory.length; i++){
+// 	sell()
+// 	console.log(inventory)
+// }
+
+// function sell() {
+// 	if (inventory.length > 0 && userCredit){
+// 	console.log('SALE')
+// 	console.log(inventory.pop())
+// } else {
+// 	console.log('no sale')
+// 	}
+// }
+
+////////////////////////////////////////////////////////////
+
+var difficulty = 'med'
+
+switch (difficulty) {
+	case 'hard':
+		console.log("No way!")
+		break
+	case 'med':
+		console.log("I can live with this")
+		break
+	case 'low':
+		console.log("Piece of cake")
+		break
+	default:
+		console.log("enter a valid option")
+		break
 }
-
-for (var i = 0; i < inventory.length; i++){
-	sell()
-	console.log(inventory)
-}
-
-function sell() {
-	if (inventory.length > 0 && userCredit){
-	console.log('SALE')
-	console.log(inventory.pop())
-} else {
-	console.log('no sale')
-	}
-}
-
-
-
-
-
 
 
 
