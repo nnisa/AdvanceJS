@@ -111,26 +111,43 @@
 
 ////////////////////////////////////////////////////////////
 
-var difficulty = 'med'
+// var difficulty = 'med'
 
-switch (difficulty) {
-	case 'hard':
-		console.log("No way!")
-		break
-	case 'med':
-		console.log("I can live with this")
-		break
-	case 'low':
-		console.log("Piece of cake")
-		break
-	default:
-		console.log("enter a valid option")
-		break
+// switch (difficulty) {
+// 	case 'hard':
+// 		console.log("No way!")
+// 		break
+// 	case 'med':
+// 		console.log("I can live with this")
+// 		break
+// 	case 'low':
+// 		console.log("Piece of cake")
+// 		break
+// 	default:
+// 		console.log("enter a valid option")
+// 		break
+// }
+
+
+////////////////////////////////////////////////////////////
+
+
+try {
+	add('bogus', 'bananas')
+} catch(e){
+	console.log('caught error: ', e.name, 'with message: ', e.message)
 }
 
-
-
-
+var c = add (3, "test")
+console.log(c)
+function add (a,b){
+	// (!a) means, a does not have a value. (isNaN(a)) not a number? 
+	if (!isNaN(a) && !isNaN(b)){
+		return a+b
+	} else {
+		throw "error number exception"
+	}
+}
 
 
 
