@@ -145,7 +145,11 @@ function add (a,b){
 	if (!isNaN(a) && !isNaN(b)){
 		return a+b
 	} else {
-		throw "error number exception"
+		var err = {
+			name: "number exception"
+			message: "Do not do this"
+		}
+		throw err
 	}
 }
 
